@@ -1,0 +1,728 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*!-------------------RESET--------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*!-------------------HEADER--------------*/
+
+.link-registrarmetor {
+    color: #ff5722;
+}
+
+/*!-------------------MAIN--------------*/
+
+/*?---------------Index----------------*/
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 128px);
+    text-align: center;
+    background-image: url("../img/cabecera-index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: #8ABB48;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+}
+
+.secciones-2-columnas section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.elclub-index, .torneo-index{
+    flex-direction: row-reverse;
+}
+
+.secciones-2-columnas section div {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    float:left; 
+}
+
+.secciones-2-columnas section div h2 {
+    font-size: 40px;
+}
+
+.secciones-2-columnas section div p {
+    font-size: 20px;
+    margin: 2px;
+    text-align: justify;
+    ;
+}
+
+.secciones-2-columnas section div a {
+    text-decoration: none;
+    color: white;
+    background-color: #4e4e4e;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    font-weight: bolder;
+    transition: all 0.4s;
+    ;
+}
+
+.secciones-2-columnas section div a:hover {
+    color: #80c524;
+    font-size: 16px;
+
+}
+
+.secciones-2-columnas section div img {
+    width: 80%;
+    box-shadow: 10px 9px 16px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 9px 16px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 9px 16px -1px rgba(0, 0, 0, 0.75);
+} 
+
+.fixet {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+}
+
+.fixet i {
+    font-size: 50px;
+    color: #ff5722;
+    line-height: 50px;
+    transition: all 0.4s;
+}
+
+.fixet a:hover i {
+    color: #80c524;
+    font-size: 40px;
+}
+
+/*?---------------Reservas----------------*/
+
+.cabecera-reserva {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/reservashero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cabecera-reserva h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: #8ABB48;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+}
+
+/*?---------------Contactenos----------------*/
+.contactenos-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo-hero titulo-hero titulo-hero"
+        "datos-contactenos datos-contactenos datos-contactenos"
+        "escribanos-contactenos escribanos-contactenos escribanos-contactenos"
+        "boton-contactenos boton-contactenos boton-contactenos";
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/samuel-elias.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.titulo-hero {
+    grid-area: titulo-hero;
+}
+
+.datos-contactenos {
+    grid-area: datos-contactenos;
+}
+
+.escribanos-contactenos {
+    grid-area: escribanos-contactenos;
+}
+
+.boton-contactenos {
+    grid-area: boton-contactenos;
+    padding-top: 5px;
+
+}
+
+
+.contactenos-hero div h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: #8ABB48;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+
+}
+
+.datos-contactenos form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-contactenos form div input {
+    border-width: medium;
+    border-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    width: 100%;
+}
+
+.datos-contactenos form div label {
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    width: 50%;
+
+}
+
+.escribanos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border-width: thick;
+    border-color: white;
+    width: 75%;
+    height: 100%;
+    margin: 2px;
+}
+
+
+/*?---------------Torneos----------------*/
+.hero-torneos {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/torneoshero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-torneos h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: #8ABB48;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+}
+
+
+/*?---------------Tienda Online----------------*/
+
+.hero-tienda {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/tienda-cabe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-tienda h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: #8ABB48;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+}
+
+.tit-prod {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #0e0101;
+    background: linear-gradient(87deg, #0e0101 0%, #ffffff 90%);
+    background: -webkit-linear-gradient(87deg, #0e0101 0%, #ffffff 90%);
+    background: -moz-linear-gradient(87deg, #0e0101 0%, #ffffff 90%);
+}
+
+
+.grid-productos {
+    width: 99%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 450px;
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.prod-4 {
+    grid-column: span 2;
+}
+
+.grid-card {
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.grid-card img {
+    width: 280px;
+    height: 50%;
+    padding: 10px;
+
+}
+
+.card-body {
+    padding: 10px;
+
+}
+
+.card-body p {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.grid-productos {
+    width: 99%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 450px;
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.prod-4 {
+    grid-column: span 2;
+}
+
+.grid-card {
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.grid-card img {
+    width: 280px;
+    height: 50%;
+    padding: 10px;
+
+}
+
+.card-body {
+    padding: 10px;
+
+}
+
+.card-body p {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+
+/*!-------------------FOOTER--------------*/
+
+
+footer {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px;
+    margin-top: 50px;
+    background-color: #fafafa;
+}
+
+footer .social-icons {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.social-icons ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-icons ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.social-icons ul li a {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+    background-color: #4e4e4e;
+    text-decoration: none;
+    border-radius: 50%;
+    display: block;
+}
+
+.social-icons ul li a i {
+    cursor: pointer;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 22px;
+    transition: all 0.4s;
+}
+
+.social-icons a:hover i {
+    color: #98cf4f;
+    font-size: 28px;
+}
+
+footer p a {
+    color: #ff5722;
+}
+
+
+
+/*!-------------MEDIA QUERY--------------*/
+
+
+
+@media screen and (max-width:1076px) {
+
+    /*-------------Index--------------*/
+    .secciones-2-columnas section div h2 {
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section div p {
+        font-size: 17px;
+        ;
+    }
+
+    .secciones-2-columnas section img {
+        width: 90vh;
+    }
+
+    .secciones-2-columnas section div h2 {
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section div p {
+        font-size: 17px;
+        ;
+    }
+
+}
+
+@media screen and (max-width:905px) {
+
+    .elclub-index img {
+        width: 80vh;
+    }
+
+    /*-------------Tienda--------------*/
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 400px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .prod-4 div img {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+
+
+@media screen and (max-width:859px) {
+
+    /*-------------Contactenos--------------*/
+    .contactenos-hero div h1 {
+        font-size: 70px;
+        transition: all 0.4s;
+    }
+
+    .contactenos-hero {
+        grid-template-rows: 1fr 1fr 1.5fr 0.5fr;
+
+    }
+
+    .grupodatos-contactenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupodatos-contactenos div {
+        padding: 5px;
+    }
+
+    .fixet {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width:812px) {
+
+    /*-------------INDEX--------------*/
+    .hero h1 {
+        font-size: 55px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        transition: all 0.4s;
+
+    }
+
+    .secciones-2-columnas section div {
+        width: 100%;
+        height: 50%;
+    }
+
+    .secciones-2-columnas section img {
+        width: 50%;
+    }
+
+    .secciones-2-columnas section div h2 {
+        font-size: 25px;
+        padding: 10px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section div p {
+        font-size: 16px;
+        padding-bottom: 10px;
+        ;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    /*-------------Tienda--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe500a.jpg");
+        background-position: center;
+        transition: all 0.4s;
+    }
+
+    .hero-tienda h1 {
+        font-size: 70px;
+        transition: all 0.4s;
+    }
+
+}
+
+.fixet i {
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.fixet a:hover i {
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:761px) {
+
+    /*-------------INDEX--------------*/
+    .hero {
+        background-position: center;
+    }
+
+    /*-------------TIENDA ONLINE--------------*/
+    .grid-productos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 500px;
+    }
+
+
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .prod-4 div img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:649px) {
+
+    /*-------------INDEX--------------*/
+    .hero {
+        background-image: url("../img/cabecera-index2.jpg");
+        background-position: center;
+        transition: all 0.4s;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        transition: all 0.4s;
+    }
+
+}
+
+
+@media screen and (max-width:649px) {
+
+    /*-------------TIENDA ONLINE--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe400a.jpg");
+        background-attachment: local;
+        transition: all 0.4s;
+    }
+
+    .hero-tienda h1 {
+        font-size: 60px;
+        transition: all 0.4s;
+    }
+
+    /*-------------Contactenos--------------*/
+    .contactenos-hero {
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+
+    }
+
+    .contactenos-hero div h1 {
+        font-size: 60px;
+        transition: all 0.4s;
+    }
+
+    .fixet i {
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+
+    .fixet a:hover i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .social-btn {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    footer .social-btn i {
+        line-height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:468px) {
+
+        /*-------------INDEX--------------*/
+        .hero {
+            /* background-image: url("../img/cabecera-index3.jpg"); */
+            background-position: center;
+            transition: all 0.4s;
+        }
+    
+        .hero h1 {
+            font-size: 40px;
+            transition: all 0.4s;
+        }
+    
+    }
+
+    /*-------------Tienda Online--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe200.jpg");
+        background-attachment: local;
+        transition: all 0.4s;
+    }
+
+    .hero-tienda h1 {
+        font-size: 50px;
+        transition: all 0.4s;
+    }
+
+    .fixet {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+
+    }
+
+    .prod-4 div img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Paraiso Tenis Club</title>
+    <link rel="icon" href="./img/tenis-ico.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="arriba">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logonav.jpg" alt="Logo del Club"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-decoration-underline" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/tienda.html">Tienda Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button type="button" class="btn btn-outline-secondary " data-bs-toggle="modal"
+                            data-bs-target="#modalForm">
+                            Ingresar
+                        </button>
+                    </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Bienvenido al Club de Socios</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Correo Electronico</label>
+                                            <input type="text" class="form-control" id="username" name="username"
+                                                placeholder="Usuario" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                placeholder="Contraseña" />
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                            <label class="form-check-label" for="rememberMe">Recuerdame</label>
+                                        </div>
+                                        <div class="modal-footer d-block">
+                                            <p class="float-start">No tengo una cuenta <a class= "link-registrarmetor" href="#">Registrarme</a></p>
+                                            <button type="submit"
+                                                class="btn btn-outline-success float-end">Ingresar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Paraiso Tenis Club</h1>
+        </section>
+
+        <div class="secciones-2-columnas">
+            <section class="elclub-index">
+                <div>
+                    <img src="./img/elclub-index.jpg" alt="Imagen desde arriba del club" class="elclubimg">
+                </div>
+                <div>
+                    <h2>El Club</h2>
+                    <p>Paraiso Tenis Club es un pequeño gran club de Tenis, ubicado en la zona recidencial de Adrogue
+                        fundado el 25 de septiembre de 1974 por un grupo de vecinos aficionados al deporte. <br>El imponente
+                        Club House, construido con el estilo tipico de los chalets clasicos de Adrogue, y las múltiples
+                        instalaciones que ofrece hacen al Paraiso Tenis Club uno de los establecimientos sociales y
+                        deportivos más importantes del conurbano bonaerense.</p>
+                </div>
+            </section>
+            <section class="reserva-index">
+                <div>
+                    <img src="./img/reserva-index.jpg" alt="Hombre sosteniendo raqueta frente a la cancha en un atardecer"
+                    class="reservaimg"> 
+                </div>
+                <div>
+                    <h2>Reserva tu cancha</h2>
+                    <p>Las personas que tienen pasión por el deporte de las raquetas encontrarán en el Paraiso Tenis Club el
+                        lugar perfecto. Podrán disfrutar de 7 canchas de polvo de ladrillo y 4 canchas rápidas.<br> Ademas contamos con la <i><b>Academia Paraiso Tenis Club.</b></i>Bajo
+                        la premisa de que el tenis es un deporte para toda la vida, apuntamos la enseñanza a jugadores
+                        profesional, jóvenes amateurs y adultos. Brindamos una educación integral que abarca todos los
+                        niveles y edades: Principiantes, Intermedio, Pre-competencia y Alto rendimiento.</p>
+                    <a href="./pages/reservas.html#reservatucancha">Reserva tu cancha</a>
+                </div>
+            </section>
+            <section class="torneo-index">
+                <div>
+                    <img src="img/torneo-index.jpg" alt="Hombres jugando single en cancha rapida" class="torneoindex">
+                </div>
+                <div>
+                    <h2>Torneos</h2>
+                    <p>Durante el año se desarrollan un número amplio de actividades ligado a la práctica del Tenis para
+                        todas
+                        las categorias que se dividen en tres grupos: las internas, las interclub y las que organiza y
+                        auspicia
+                        la Asociación Argentina de Tenis (AAT)<br>El club organiza su liga interna, exclusiva para socios,
+                        donde
+                        se van sumando puntos durante todo el año en distintos torneos para lograr estar en el top 10 del
+                        club y
+                        asi conseguir beneficios exclusivos</p>
+                    <a href="./pages/torneos.html#forminscripciontit">Inscribite ahora</a>
+                </div>
+            </section>
+            <section class="tienda-index">
+                <div>
+                    <img src="img/tennis-1671852_640.jpg" alt="Hombres jugando single en cancha rapida" class="torneoindex">
+                </div>
+                <div>
+                    <h2>Tienda Online</h2>
+                    <p>Contamos con una tenida online para todos los amigos de nuestro querido club donde podran adquirir
+                        productos nuevos, a unos precios sin igual, y ademas poder realizar compras de productos usados
+                        ofrecidos por nuestros socios.<br>Los productos nuevos cuentan con garantias oficiales y los mismos
+                        pueden ser retirados por la administracion del club dentro de nuestro bello Club House</p>
+                    <a href="./pages/tienda.html">Comprá ahora</a>
+                </div>
+            </section>
+        </div>
+       <!-- Boton Flotante -->
+       <section class="fixet">
+        <a href="#arriba"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a class="social-btn"
+                                    href="https://www.facebook.com/people/Paraiso-Tenis-Club/100064847262678/?sk=photos"
+                                    target="_blank"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="https://www.instagram.com/paraisoadrogue/?hl=es"
+                                    target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="https://youtube.com/@tennistv?si=bnlOwHN1pW-Tac24"
+                                    target="_blank"><i class="bi bi-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn"
+                                    href="https://www.tiktok.com/@tennistv?is_from_webapp=1&sender_device=pc"
+                                    target="_blank"><i class="bi bi-tiktok"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="#"><i class="bi bi-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry <a href="#">Terms of
+                            Service</a> and <a href="#"> Privacy Policy</a> Copyright © 2023.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

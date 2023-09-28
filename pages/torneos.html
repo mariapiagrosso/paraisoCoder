@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos - Paraiso Tenis Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="arriba">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logonav.jpg" alt="Logo del Club"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-decoration-underline" aria-current="page"
+                                href="./torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./tienda.html">Tienda Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button type="button" class="btn btn-outline-secondary " data-bs-toggle="modal"
+                            data-bs-target="#modalForm">
+                            Ingresar
+                        </button>
+                    </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Bienvenido al Club de Socios</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Correo Electronico</label>
+                                            <input type="text" class="form-control" id="username" name="username"
+                                                placeholder="Usuario" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                placeholder="Contraseña" />
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                            <label class="form-check-label" for="rememberMe">Recuerdame</label>
+                                        </div>
+                                        <div class="modal-footer d-block">
+                                            <p class="float-start">No tengo una cuenta <a class="link-registrarmetor"
+                                                    href="#">Registrarme</a></p>
+                                            <button type="submit"
+                                                class="btn btn-outline-success float-end">Ingresar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-torneos">
+            <h1>Torneos</h1>
+        </section>
+        <section>
+            <img src="" alt="">
+            <div class="copa-paraiso">
+                <h2>Copa Paraiso</h2>
+                <p>Esta es la copa mas importante para los jugadores amateurs en todo CABA y GBA tanto para
+                    Damas
+                    como para Caballeros. Ser el campeon de este torneo no solo da un status dentro del mundo
+                    del
+                    tenis sino que tambien proporciona a los ganadores la posibilidad de participar en torneos
+                    de
+                    primer nivel intraprovinciales. <br> Este torneo, se disputará por Zonas, es decir que los
+                    participantes se distribuirán en zonas y se enfrentarán todos contra todos dentro de dichas
+                    zonas.</p>
+                <a href="#inscriform">Inscribite</a>
+            </div>
+        </section>
+        <section>
+            <img src="" alt="">
+            <div>
+                <h2>Cuatro estaciones del tenis</h2>
+                <p>Este es un torneo con la metodologia <i><b>eliminacion directa</b></i> que organiza el club
+                    <i><b>4 veces al año</b></i>. El mismo abre su inscripccion tanto para socios como para no
+                    socios.<br>En este tipo de torneos los jugadores son distrubuidos en un cuadro de juego para
+                    enfrentarse a simple eliminación (el que pierde queda eliminado y el que gana avanza de
+                    ronda),
+                    motivo por el cual tras cada ronda la mitad de los jugadores va quedando eliminado a la vez
+                    que
+                    los ganadores van atravesando las distintas instancias del Torneo hasta que sólo dos llegan
+                    a la
+                    Final para decidir el campeón.
+                </p>
+                <a href="#inscriform">Inscribite</a>
+            </div>
+        </section>
+        <section>
+            <img src="" alt="">
+            <div>
+                <h2>Americano</h2>
+                <p>Cada primer fin de semana de cada mes el club organiza sus famosos torneos americanos donde
+                    cuenta con la participacion de todos los socios y no socios.<br>Son torneos, que duran todo
+                    el
+                    dia, donde se disputan todos contra todos por categoria tanto single como doble.<br>Se
+                    otorgan
+                    importantes premios a los campeones por cada categoria
+                </p>
+                <a href="#inscriform">Inscribite</a>
+
+        </section>
+        <section>
+            <img src="" alt="">
+            <div>
+                <h2>Copa Argentina</h2>
+                <p>Nestro club selecciona los mejores alumnos, por categoria, de su academia de tenis para que
+                    nos
+                    representen en esta importante copa anual por todo el pais.</p>
+            </div>
+        </section>
+        <section>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+        <section id="inscriform">
+            <!-- Imagen ganadores -->
+            <img src="" alt="">
+            <!-- LFormulario de inscripcion -->
+            <form action="" method="" enctype="">
+                <h3 id="forminscripciontit">Inscripcion</h3>
+                <div>
+                    <label for="torneo">Torneo:</label>
+                    <select name="torneo" id="torneo">
+                        <option value="copa">Copa Paraiso</option>
+                        <option value="americano">Americano</option>
+                        <option value="interclub">Interclub</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo">
+                        <option value="single">Single</option>
+                        <option value="doble">Doble</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="genero">Genero:</label>
+                    <select name="genero" id="genero">
+                        <option value="damas">Damas</option>
+                        <option value="caballeros">Caballeros</option>
+                        <option value="mixto">Mixto</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <select name="edad" id="edad">
+                        <option value="edad25">+25</option>
+                        <option value="edad30">+30</option>
+                        <option value="edad40">+40</option>
+                        <option value="edad25">+50</option>
+                        <option value="edad25">+60</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="categoa">A</option>
+                        <option value="categob">B</option>
+                        <option value="categoc">C</option>
+                        <option value="categod">D</option>
+                        <option value="categoprin">Principiantes</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>Jugador 1</h4>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="tel">Telefono</label>
+                        <input type="tel" name="" id="">
+                    </div>
+                </div>
+                <div>
+                    <h4>Jugador 2</h4>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="tel">Telefono</label>
+                        <input type="tel" name="" id="">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Proximos Partidos</h2>
+            <div>
+                <h4>Americano Caballeros Single</h4>
+                <div>
+                    <!-- Imagen Jugador -->
+                    <h6>Juan Pablo Perez</h6>
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <!-- Imagen Jugador -->
+                    <h6>Emiliano Gomez</h6>
+                </div>
+            </div>
+            <div>
+                <h4>Americano Damas Single</h4>
+                <div>
+                    <!-- Imagen Jugador -->
+                    <h6>Monica Rodriguez</h6>
+                </div>
+                <h5>VS</h5>
+                <div>
+                    <!-- Imagen Jugador -->
+                    <h6>Maria Lopez</h6>
+                </div>
+            </div>
+        </section>
+         <!-- Boton Flotante -->
+         <section class="fixet">
+            <a href="#arriba"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a class="social-btn"
+                                    href="https://www.facebook.com/people/Paraiso-Tenis-Club/100064847262678/?sk=photos"
+                                    target="_blank"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="https://www.instagram.com/paraisoadrogue/?hl=es"
+                                    target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="https://youtube.com/@tennistv?si=bnlOwHN1pW-Tac24"
+                                    target="_blank"><i class="bi bi-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn"
+                                    href="https://www.tiktok.com/@tennistv?is_from_webapp=1&sender_device=pc"
+                                    target="_blank"><i class="bi bi-tiktok"></i></a>
+                            </li>
+                            <li>
+                                <a class="social-btn" href="#"><i class="bi bi-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry <a href="#">Terms of
+                            Service</a> and <a href="#"> Privacy Policy</a> Copyright © 2023.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
