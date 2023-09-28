@@ -255,7 +255,7 @@ body {
 
 .hero-tienda {
     width: 100%;
-    height: 80vh;
+    height: calc(100vh - 128px);
     text-align: center;
     background-image: url("../img/tienda-cabe.jpg");
     background-size: cover;
@@ -697,9 +697,6 @@ footer p a {
             font-size: 40px;
             transition: all 0.4s;
         }
-    
-    }
-
     /*-------------Tienda Online--------------*/
     .hero-tienda {
         background-image: url("../img/tienda-cabe200.jpg");
@@ -723,6 +720,4 @@ footer p a {
         width: 250px;
         height: 250px;
     }
-
-
-}
+    }
