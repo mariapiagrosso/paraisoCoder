@@ -1,0 +1,231 @@
+/*?------------------------------------Index-------------------------------*/
+
+.hero {
+    background-image: url("../img/cabecera-index.jpg");
+}
+
+
+
+/*?---------------Reservas----------------*/
+
+.cabecera-reserva {
+    background-image: url("../img/reservashero.jpg");
+}
+
+.video-nuestrascanchas {
+    iframe {
+        width: 90%;
+        height: 60vh;
+    }
+
+}
+
+.formreser {
+    @extend %grid-ext;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "reserva-tit reserva-tit"
+        "reserva-form reserva-form";
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/samuel-elias.jpg");
+}
+
+.reserva-tit {
+    grid-area: reserva-tit;
+}
+
+.reserva-form {
+    grid-area: reserva-form;
+}
+
+
+
+
+/*?--------------------------------Torneos----------------------------------------*/
+.hero-torneos {
+    background-image: url("../img/torneoshero.jpg");
+}
+
+.inscriform {
+    @extend %grid-ext;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "inscrip-tit inscrip-tit"
+        "inscrip-form inscrip-form"
+        "inscripjugad-form inscripjugad-form";
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/samuel-elias.jpg");
+}
+
+.inscrip-tit {
+    grid-area: inscrip-tit;
+}
+
+.inscrip-form {
+    grid-area: inscrip-form;
+}
+
+.inscripjugad-form {
+    grid-area: inscripjugad-form;
+}
+
+.inscrip-form {
+    text-align: center;
+
+    form {
+        text-align: center;
+        @extend %flex-space;
+    }
+
+}
+
+/*?--------------------------------Tienda Online----------------------------------*/
+
+.hero-tienda {
+    background-image: url("../img/tienda-cabe.jpg");
+}
+
+.tit-prod {
+    text-align: center;
+    color: nth($colores-basicos, 1);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+
+
+}
+
+
+.grid-productos {
+    width: 99%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 450px;
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.prod-4 {
+    grid-column: span 2;
+}
+
+.grid-card {
+    width: 99%;
+    height: 99%;
+    @extend %flex-space;
+    box-shadow: 10px 10px 5px 0px $color-sombra;
+    -webkit-box-shadow: 10px 10px 5px 0px $color-sombra;
+    -moz-box-shadow: 10px 10px 5px 0px $color-sombra;
+
+    img {
+        width: 280px;
+        height: 50%;
+        padding: 10px;
+    }
+}
+
+.card-body {
+    padding: 10px;
+
+    p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+/*?------------------------------------Contactenos----------------------------------*/
+.contactenos-hero {
+    @extend %grid-ext;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "titulo-hero titulo-hero titulo-hero"
+        "datos-contactenos datos-contactenos datos-contactenos"
+        "escribanos-contactenos escribanos-contactenos escribanos-contactenos"
+        "boton-contactenos boton-contactenos boton-contactenos";
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/samuel-elias.jpg");
+
+    div {
+        h1 {
+            font-size: 80px;
+            font-style: italic;
+            font-family: 'Anton', sans-serif;
+            color: $color-principal;
+            text-shadow: 4px 4px 2px $color-sombra;
+        }
+    }
+}
+
+.titulo-hero {
+    grid-area: titulo-hero;
+}
+
+.datos-contactenos {
+    grid-area: datos-contactenos;
+
+    form {
+        div {
+            @include flex(flex, center, center);
+
+            div {
+                label {
+                    color: whitesmoke;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    width: 50%;
+                }
+
+                input {
+                    border-width: medium;
+                    border-color: nth($colores-basicos, 2);
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: medium;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.escribanos-contactenos {
+    grid-area: escribanos-contactenos;
+}
+
+.boton-contactenos {
+    grid-area: boton-contactenos;
+    padding-top: 5px;
+
+}
+
+.escribanos {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: nth($colores-basicos, 2);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border-width: thick;
+    border-color: nth($colores-basicos, 2);
+    width: 75%;
+    height: 100%;
+    margin: 2px;
+}

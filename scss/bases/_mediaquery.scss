@@ -1,0 +1,272 @@
+/*!------------------------------MEDIA QUERY------------------------------------*/
+
+@media screen and (max-width:1076px) {
+
+    /*--------------- Estructura general Index/Reservas/Torneos----------------*/
+    
+    .secciones-2-columnas section div h2 {
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section div p {
+        font-size: 17px;
+        ;
+    }
+
+    .secciones-2-columnas section img {
+        width: 90vh;
+    }
+
+}
+
+@media screen and (max-width:905px) {
+
+    .elclub-index img {
+        width: 80vh;
+    }
+
+    /*-------------Tienda--------------*/
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 400px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .prod-4 div img {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:859px) {
+
+    /*-------------Contactenos--------------*/
+    .contactenos-hero div h1 {
+        font-size: 70px;
+        transition: all 0.4s;
+    }
+
+    .contactenos-hero {
+        grid-template-rows: 1fr 1fr 1.5fr 0.5fr;
+
+    }
+
+    .grupodatos-contactenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupodatos-contactenos div {
+        padding: 5px;
+    }
+
+    /*--------- Boton Flotante ---------*/
+    .fixet {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width:812px) {
+
+    /*--------------- Estructura general Index/Reservas/Torneos----------------*/
+
+    .secciones-2-columnas section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.4s;
+
+    }
+
+    .secciones-2-columnas section div {
+        width: 100%;
+        height: 50%;
+    }
+
+    .secciones-2-columnas section img {
+        width: 50%;
+    }
+
+    .secciones-2-columnas section div h2 {
+        font-size: 25px;
+        padding: 10px;
+        transition: all 0.4s;
+    }
+
+    .secciones-2-columnas section div p {
+        font-size: 16px;
+        padding-bottom: 10px;
+        ;
+    }
+
+    /*---------------Titulo Portada TODAS las paginas----------------*/
+    .seccion-portada h1 {
+        font-size: 55px;
+        transition: all 0.4s;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    /*-------------Tienda--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe500a.jpg");
+        background-position: center;
+        transition: all 0.4s;
+    }
+
+    /*--------- Boton Flotante ---------*/
+
+    .fixet i {
+        font-size: 40px;
+        transition: all 0.4s;
+    }
+
+    .fixet a:hover i {
+        font-size: 30px;
+    }
+
+    /*-------------Tienda--------------*/
+    .grid-productos {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+}
+
+@media screen and (max-width:761px) {
+
+    /*---------------Titulo Portada TODAS las paginas----------------*/
+
+    .seccion-portada {
+        background-position: center;
+    }
+
+    /*-------------TIENDA ONLINE--------------*/
+    .grid-productos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 500px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+}
+
+@media screen and (max-width:649px) {
+
+    /*-------------INDEX--------------*/
+    .hero {
+        background-image: url("../img/cabecera-index2.jpg");
+        background-position: center;
+        transition: all 0.4s;
+    }
+
+    /*---------------Titulo Portada TODAS las paginas----------------*/
+
+    .seccion-portada h1 {
+        font-size: 50px;
+        transition: all 0.4s;
+    }
+
+}
+
+@media screen and (max-width:649px) {
+
+    /*-------------TIENDA ONLINE--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe400a.jpg");
+        background-attachment: local;
+        transition: all 0.4s;
+    }
+
+
+    /*-------------Contactenos--------------*/
+    .contactenos-hero {
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+
+    }
+
+    .contactenos-hero div h1 {
+        font-size: 60px;
+        transition: all 0.4s;
+    }
+
+    /*--------- Boton Flotante ---------*/
+    .fixet i {
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+
+    .fixet a:hover i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .video-nuestrascanchas iframe {
+        height: 50vh;
+    }
+
+
+    footer .social-btn {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    footer .social-btn i {
+        line-height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:468px) {
+
+    /*---------------Titulo Portada TODAS las paginas----------------*/
+
+    .seccion-portada h1 {
+        font-size: 40px;
+        transition: all 0.4s;
+    }
+
+    /*-------------Tienda Online--------------*/
+    .hero-tienda {
+        background-image: url("../img/tienda-cabe200.jpg");
+        background-attachment: local;
+        transition: all 0.4s;
+    }
+
+    .prod-6 div img {
+        height: 45%;
+    }
+
+    .video-nuestrascanchas iframe {
+        height: 40vh;
+    }
+
+    /*--------- Boton Flotante ---------*/
+    .fixet {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+
+    }
+}

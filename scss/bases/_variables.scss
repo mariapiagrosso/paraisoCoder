@@ -1,0 +1,41 @@
+//!VARIABLES
+$color-principal: #80c524;
+$color-secundario: #ff5722;
+$color-backboton: #4e4e4e;
+$color-sombra: rgba(0, 0, 0, 0.75);
+
+//!LISTAS
+
+$colores-basicos: black, white;
+
+//!EXTENDS
+
+%flex-space{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%grid-ext{
+    display: grid;
+    grid-auto-flow: row;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+%fondo-naranja{
+    background-color: rgb(233,119,62);
+    background: linear-gradient(41deg, rgba(233,119,62,1) 0%, rgba(245,222,179,1) 48%);
+}
+
+//!MIXINS
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
