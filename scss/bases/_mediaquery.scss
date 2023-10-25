@@ -111,6 +111,12 @@
         transition: all 0.4s;
     }
 
+    /*---------------Estilo titulo Formularios Reserva y Torneo----------------*/
+    .tit-forms{
+        font-size: 40px;
+    
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -165,6 +171,9 @@
         grid-row: span 1;
     }
 
+    .secciones-2-columnas section div h2 {
+        padding: 30px;
+    }
 
 }
 
@@ -183,6 +192,7 @@
         font-size: 50px;
         transition: all 0.4s;
     }
+
 
 }
 
@@ -222,6 +232,12 @@
 
     .video-nuestrascanchas iframe {
         height: 50vh;
+    }
+
+    .formtst{
+        display: block;
+        justify-content: center;
+        align-items: center;
     }
 
 

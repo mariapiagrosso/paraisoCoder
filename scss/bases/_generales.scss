@@ -127,3 +127,33 @@ body {
 
     }
 }
+
+/*--------------- Estilo titulo y Botones Formularios Reserva y Torneo----------------*/
+
+
+.tit-forms{
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    color: $color-principal;
+    text-shadow: 4px 4px 2px $color-sombra;
+
+}
+
+.btn-forms{
+    color: nth($colores-basicos, 2);
+                background-color: $color-backboton;
+                margin: 12px;
+                padding: 10px;
+                font-size: 15px;
+                border-radius: 15px;
+                font-weight: bolder;
+                transition: all 0.4s;
+                &:hover {
+                    color: $color-principal;
+
+                }
+}
+
+
+

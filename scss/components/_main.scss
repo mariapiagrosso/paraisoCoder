@@ -39,9 +39,19 @@
 
 .reserva-form {
     grid-area: reserva-form;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        label {
+            text-shadow: 4px -2px 18px rgba(255, 255, 255, 1);
+        }
+    }
 }
-
-
 
 
 /*?--------------------------------Torneos----------------------------------------*/
@@ -52,12 +62,11 @@
 .inscriform {
     @extend %grid-ext;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-template-areas:
         "inscrip-tit inscrip-tit"
-        "inscrip-form inscrip-form"
-        "inscripjugad-form inscripjugad-form";
+        "inscrip-form inscrip-form";
     width: 100%;
     text-align: center;
     background-image: url("../img/samuel-elias.jpg");
@@ -69,21 +78,46 @@
 
 .inscrip-form {
     grid-area: inscrip-form;
-}
-
-.inscripjugad-form {
-    grid-area: inscripjugad-form;
-}
-
-.inscrip-form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
     form {
-        text-align: center;
-        @extend %flex-space;
-    }
+        select {
+            margin: 5px;
+        }
 
+        input {
+            margin: 5px;
+        }
+
+        label {
+            text-shadow: 4px -2px 18px rgba(255, 255, 255, 1);
+        }
+    }
 }
+
+// .formtst{
+//     div{
+//         div{
+//             form{
+//                 select{
+//                     margin: 5px;
+//                 }
+//                 input{
+//                     margin: 5px;
+//                 }
+//                 label{
+//                     text-shadow: 4px -2px 18px rgba(255,255,255,1);
+//                 }
+//             }
+//         };
+//     }
+
+// }
 
 /*?--------------------------------Tienda Online----------------------------------*/
 

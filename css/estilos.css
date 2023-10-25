@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-.secciones-2-columnas section, .inscrip-form form, .grid-card {
+.secciones-2-columnas section, .grid-card {
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -106,6 +106,26 @@ body {
       color: #80c524;
       font-size: 16px; }
 
+/*--------------- Estilo titulo y Botones Formularios Reserva y Torneo----------------*/
+.tit-forms {
+  font-size: 50px;
+  font-style: italic;
+  font-family: 'Anton', sans-serif;
+  color: #80c524;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.75); }
+
+.btn-forms {
+  color: white;
+  background-color: #4e4e4e;
+  margin: 12px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  font-weight: bolder;
+  transition: all 0.4s; }
+  .btn-forms:hover {
+    color: #80c524; }
+
 /*?------------------------------------Index-------------------------------*/
 .hero {
   background-image: url("../img/cabecera-index.jpg"); }
@@ -131,7 +151,15 @@ body {
   grid-area: reserva-tit; }
 
 .reserva-form {
-  grid-area: reserva-form; }
+  grid-area: reserva-form;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .reserva-form form label {
+    text-shadow: 4px -2px 18px white; }
 
 /*?--------------------------------Torneos----------------------------------------*/
 .hero-torneos {
@@ -139,9 +167,9 @@ body {
 
 .inscriform {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr;
+  grid-template-rows: 0.5fr 1.5fr;
   gap: 0px 0px;
-  grid-template-areas: "inscrip-tit inscrip-tit" "inscrip-form inscrip-form" "inscripjugad-form inscripjugad-form";
+  grid-template-areas: "inscrip-tit inscrip-tit" "inscrip-form inscrip-form";
   width: 100%;
   text-align: center;
   background-image: url("../img/samuel-elias.jpg"); }
@@ -150,15 +178,19 @@ body {
   grid-area: inscrip-tit; }
 
 .inscrip-form {
-  grid-area: inscrip-form; }
-
-.inscripjugad-form {
-  grid-area: inscripjugad-form; }
-
-.inscrip-form {
-  text-align: center; }
-  .inscrip-form form {
-    text-align: center; }
+  grid-area: inscrip-form;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .inscrip-form form select {
+    margin: 5px; }
+  .inscrip-form form input {
+    margin: 5px; }
+  .inscrip-form form label {
+    text-shadow: 4px -2px 18px white; }
 
 /*?--------------------------------Tienda Online----------------------------------*/
 .hero-tienda {
@@ -363,7 +395,10 @@ footer {
   /*---------------Titulo Portada TODAS las paginas----------------*/
   .seccion-portada h1 {
     font-size: 55px;
-    transition: all 0.4s; } }
+    transition: all 0.4s; }
+  /*---------------Estilo titulo Formularios Reserva y Torneo----------------*/
+  .tit-forms {
+    font-size: 40px; } }
 
 @media screen and (max-width: 800px) {
   /*-------------Tienda--------------*/
@@ -395,7 +430,9 @@ footer {
     grid-auto-rows: 500px; }
   .grid-item {
     grid-column: span 1;
-    grid-row: span 1; } }
+    grid-row: span 1; }
+  .secciones-2-columnas section div h2 {
+    padding: 30px; } }
 
 @media screen and (max-width: 649px) {
   /*-------------INDEX--------------*/
@@ -430,6 +467,10 @@ footer {
 @media (max-width: 576px) {
   .video-nuestrascanchas iframe {
     height: 50vh; }
+  .formtst {
+    display: block;
+    justify-content: center;
+    align-items: center; }
   footer .social-btn {
     width: 40px;
     height: 40px;
